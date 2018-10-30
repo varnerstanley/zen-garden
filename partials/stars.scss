@@ -1,0 +1,53 @@
+@mixin closeStars {
+	background: url("../SVG/bigstars-01.svg") repeat top center;
+	content: " ";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1000vh;
+	width: 100%;
+	z-index: 1;
+	animation: animStar 150s linear infinite;
+	-webkit-transform: translateZ(-999px) scale(2); //transform: translateZ(-999px) scale(2);
+}
+
+@mixin midStars {
+	background: url("../SVG/smallstars-02.svg") repeat top center;
+	content: " ";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1000vh;
+	width: 100%;
+	z-index: 1;
+	animation: animStar 300s linear infinite;
+	-webkit-transform: translateZ(-999px) scale(2); //transform: translateZ(-999px) scale(6);
+}
+
+@mixin farStars {
+	background: url("../SVG/smallstars-01.svg") repeat top center;
+	content: " ";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1000vh;
+	width: 100%;
+	z-index: 1;
+	animation: animStar 450s linear infinite;
+	-webkit-transform: translateZ(-999px) scale(2); //transform: translateZ(-999px) scale(2);
+}
+
+@keyframes animStar {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-200vh);
+	}
+}

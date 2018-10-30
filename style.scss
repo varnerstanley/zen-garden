@@ -1,0 +1,97 @@
+@import "partials/typography.scss";
+@import "partials/layout.scss";
+@import "partials/stars.scss";
+@import 'partials/animation';
+@import "normalize.css";
+
+body {
+  background-color: #19191a;
+}
+.page-wrapper {
+  padding: 20px;
+  text-align: left;
+  max-width: 64rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: $white;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sidebar li {
+  line-height: 1.5em;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar li a:first-of-type {
+  display: block;
+  font-size: 1.21em;
+  text-transform: uppercase;
+
+  color: $white;
+}
+
+.sidebar .designer-name {
+  color: #cecece;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #cecece;
+  text-decoration: none;
+  padding-right: 20px;
+}
+footer a:hover {
+  color: $white;
+  text-decoration: underline;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+
+  body {
+    background-color: #000;
+    background-image: url("stars.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: auto;
+  }
+  .page-wrapper {
+    background-color: #19191a;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: calc(60%) calc(40%);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+  }
+  section {
+    grid-column: 1 / 2;
+  }
+  section::after {
+    content: url("worldwide.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      position: relative;
+      left: 300px;
+  }
+  div .main{
+    grid-row: 3 / 6;
+    grid-column: 1 / 2;
+  }
+
+}
