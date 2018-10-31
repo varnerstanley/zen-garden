@@ -4,6 +4,7 @@
 @import 'partials/animation';
 @import "normalize.css";
 
+
 body {
   background-color: #19191a;
 }
@@ -31,7 +32,6 @@ li {
 }
 
 .sidebar li a:first-of-type {
-  display: block;
   font-size: 1.21em;
   text-transform: uppercase;
 
@@ -75,23 +75,88 @@ footer a:hover {
     background-color: #19191a;
     margin-top: 250px;
     display: grid;
-    grid-template-columns: calc(60%) calc(40%);
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 20px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+
   }
   section {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
   }
-  section::after {
+
+  section::before {
     content: url("worldwide.png");
       background-repeat: no-repeat;
       background-position: right top;
       position: relative;
-      left: 300px;
+      float: right;
+      margin-right: -287px;
+      top: 35px;
+  }
+  section::after {
+    content: url("startup.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      position: relative;
+      float: right;
+      margin-right: -313px;
+      top: -158px;
   }
   div .main{
-    grid-row: 3 / 6;
-    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    // grid-column: 1 / 4;
+    grid-column: 3 / 6;
+  }
+  div .main::before {
+    content: url("worldwide.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      position: relative;
+      float: left;
+      top: 35px;
+      margin-left: -305px;
+  }
+  
+  aside {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  aside {
+    background-image: url("stars.jpg");
+    width: 100%;
+
+  }
+  aside h3 {
+    margin-left: 139px;
+    font-size: 1.5rem;
+  }
+  aside .zen-resources h3 {
+    margin-left: 38px;
+  }
+  aside .zen-resources h3::after {
+    content: url("worldwide.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      position: relative;
+      left: 30px;
+      top: 22px;
+  }
+  aside nav {
+    margin-left: 100px;
+  }
+  aside nav::before {
+    content: url("worldwide.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      position: relative;
+      left: 50px;
+  }
+
+  aside .zen-resources ul {
+    margin-top: 40px;
   }
 
 }
