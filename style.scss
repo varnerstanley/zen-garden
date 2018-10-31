@@ -124,11 +124,7 @@ footer a:hover {
     display: flex;
     flex-direction: row;
   }
-  aside {
-    background-image: url("stars.jpg");
-    width: 100%;
 
-  }
   aside h3 {
     margin-left: 139px;
     font-size: 1.5rem;
@@ -158,5 +154,10 @@ footer a:hover {
   aside .zen-resources ul {
     margin-top: 40px;
   }
-  
+
+  aside  {
+    background-color: #000;
+    padding-right: 20px;
+  }
+
 }
