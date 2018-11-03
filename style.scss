@@ -76,32 +76,32 @@ footer a:hover {
     margin-top: 250px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 22% 15% 63%;
 
   }
   section {
-    grid-column: 1 / 4;
-    margin-left: 30px;
+    grid-column: 2 / 5;
+    padding-bottom: 30px;
   }
 
-  section::before {
-    content: url("worldwide.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-      position: relative;
-      float: right;
-      margin-right: -287px;
-      top: 35px;
-  }
-  section::after {
-    content: url("startup.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-      position: relative;
-      float: right;
-      margin-right: -313px;
-      top: -158px;
-  }
+  // section::before {
+  //   content: url("worldwide.png");
+  //     background-repeat: no-repeat;
+  //     background-position: right top;
+  //     position: relative;
+  //     float: right;
+  //     margin-right: -287px;
+  //     top: 35px;
+  // }
+  // section::after {
+  //   content: url("startup.png");
+  //     background-repeat: no-repeat;
+  //     background-position: right top;
+  //     position: relative;
+  //     float: right;
+  //     margin-right: -313px;
+  //     top: -158px;
+  // }
   div .main{
     grid-row: 3 / 4;
     // grid-column: 1 / 4;
@@ -120,10 +120,6 @@ footer a:hover {
   aside {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
-    margin-bottom: 50px;
-    margin-top: -50px;
-    background-image: url("stars.jpg"); // this is just to show what we could do. it's not for real.
-    padding: 3rem 0;
   }
   .wrapper {
     display: flex;
@@ -131,10 +127,7 @@ footer a:hover {
     justify-content: center;
   }
 
-  aside h3 {
-    // margin-left: 139px;
-    font-size: 1.5rem;
-  }
+
   aside .zen-resources h3, .design-selection h3, .design-archives h3 {
     margin-left: 38px;
   }
@@ -156,9 +149,5 @@ footer a:hover {
   //     position: relative;
   //     left: 50px;
   // }
-
-  aside .zen-resources ul {
-    margin-top: 40px;
-  }
 
 }

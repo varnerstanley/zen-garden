@@ -9,21 +9,28 @@ h1, h2, h3 {
   font-family: "Roboto Slab", serif; }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 4.4rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em;
   color: #fff; }
 
+h3 {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 2rem; }
+
 h2, h3 {
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   color: #e6e6e6; }
 
 p {
   font-size: 1rem;
   line-height: 1.4;
   color: #fff;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  margin: 12px 0; }
   p a {
     color: #fff;
     text-decoration: underline; }
@@ -107,29 +114,11 @@ footer a:hover {
     margin-top: 250px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%; }
+    grid-template-rows: 22% 15% 63%; }
 
   section {
-    grid-column: 1 / 4;
-    margin-left: 30px; }
-
-  section::before {
-    content: url("worldwide.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    position: relative;
-    float: right;
-    margin-right: -287px;
-    top: 35px; }
-
-  section::after {
-    content: url("startup.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    position: relative;
-    float: right;
-    margin-right: -313px;
-    top: -158px; }
+    grid-column: 2 / 5;
+    padding-bottom: 30px; }
 
   div .main {
     grid-row: 3 / 4;
@@ -137,24 +126,14 @@ footer a:hover {
 
   aside {
     grid-column: 1 / 6;
-    grid-row: 2 / 3;
-    margin-bottom: 50px;
-    margin-top: -50px;
-    background-image: url("stars.jpg");
-    padding: 3rem 0; }
+    grid-row: 2 / 3; }
 
   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center; }
 
-  aside h3 {
-    font-size: 1.5rem; }
-
   aside .zen-resources h3, .design-selection h3, .design-archives h3 {
-    margin-left: 38px; }
-
-  aside .zen-resources ul {
-    margin-top: 40px; } }
+    margin-left: 38px; } }
 
 /*# sourceMappingURL=style.css.map */
