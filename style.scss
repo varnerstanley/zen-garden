@@ -25,6 +25,9 @@ li {
   list-style-type: none;
 }
 
+.sidebar {
+  padding: 20px 0;
+}
 .sidebar li {
   line-height: 1.5em;
   padding-top: 5px;
@@ -32,10 +35,13 @@ li {
 }
 
 .sidebar li a:first-of-type {
-  font-size: 1.21em;
-  text-transform: uppercase;
-
+  font-size: 1rem;
+  // text-transform: uppercase;
   color: $white;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
 }
 
 .sidebar .designer-name {
@@ -61,93 +67,246 @@ footer a:hover {
     align-items: flex-start;
     flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
-
-  body {
-    background-color: #000;
-    background-image: url("stars.jpg");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: repeat-x;
-    background-size: auto;
-  }
-  .page-wrapper {
-    background-color: #19191a;
-    margin-top: 250px;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 22% 15% 63%;
-
-  }
-  section {
-    grid-column: 2 / 5;
-    padding-bottom: 30px;
-  }
-
-  // section::before {
-  //   content: url("worldwide.png");
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     position: relative;
-  //     float: right;
-  //     margin-right: -287px;
-  //     top: 35px;
-  // }
-  // section::after {
-  //   content: url("startup.png");
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     position: relative;
-  //     float: right;
-  //     margin-right: -313px;
-  //     top: -158px;
-  // }
-  div .main{
-    grid-row: 3 / 4;
-    // grid-column: 1 / 4;
-    grid-column: 2 / 5;
-  }
-  // div .main::before {
-  //   content: url("worldwide.png");
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     position: relative;
-  //     float: left;
-  //     top: 35px;
-  //     margin-left: -305px;
-  // }
-
-  aside {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+@media only screen and (min-width: 960px) {
 
 
-  aside .zen-resources h3, .design-selection h3, .design-archives h3 {
-    margin-left: 38px;
-  }
-  // aside .zen-resources h3::before {
-  //   content: url("worldwide.png");
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     position: relative;
-  //     left: 30px;
-  //     top: 22px;
-  // }
-  aside nav {
-    // margin-left: 100px;
-  }
-  // aside nav::before {
-  //   content: url("worldwide.png");
-  //     background-repeat: no-repeat;
-  //     background-position: right top;
-  //     position: relative;
-  //     left: 50px;
-  // }
+  html::after {
+        background: url("SVG/bigstars-01.svg") repeat top center;
+        content: " ";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1000vh;
+        width: 100%;
+        z-index: 1;
+        animation: animStar 150s linear infinite;
+        -webkit-transform: translateZ(-999px) scale(2);
+      }
+      html::before {
+        background: url("SVG/smallstars-02.svg") repeat top center;
+        content: " ";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1000vh;
+        width: 100%;
+        z-index: 1;
+        animation: animStar 300s linear infinite;
+        -webkit-transform: translateZ(-999px) scale(2);
+      }
 
-}
+      body {
+        background-color: #000;
+
+      }
+      .page-wrapper::before {
+        content: url("SVG/satellite.svg");
+        width: 15%;
+        height: 100px;
+        position: relative;
+        top: -150px;
+        left: 628px;
+        animation:
+        10s infinite alternate slidein,
+        15s infinite linear rotation;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 80%;
+          width: 15%;
+        }
+        to {
+          margin-left: 0%;
+          width: 15%;
+        }
+      }
+      @keyframes rotation {
+        50% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .page-wrapper {
+        background-color: #19191a;
+        margin-top: 250px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 22% 15% 63%;
+      }
+
+      section {
+        grid-column: 2 / 5;
+        padding-bottom: 30px;
+      }
+
+      div .main{
+        grid-row: 3 / 4;
+        // grid-column: 1 / 4;
+        grid-column: 2 / 5;
+      }
+
+    // PLANET
+      .explanation::before {
+        content: url("SVG/planet.svg");
+        width: 15%;
+        margin: 0px 60px;
+        height: auto;
+        position: relative;
+        top: 181px;
+        margin-left: -160px;
+        animation: rotation 60s infinite linear, nudge 5s linear infinite alternate;
+      }
+
+        @keyframes rotation {
+          50% {
+            transform: rotate(360deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+        @keyframes nudge {
+          0%, 100% {
+            transform: translate(0, 0);
+          }
+          50% {
+            transform: translate(0, 25px);
+          }
+          80% {
+            transform: translate(0, 50px);
+          }
+        }
+
+        .explanation, .participation, .benefits, .requirements {
+          margin-top: -100px;
+        }
+      aside {
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+      }
+
+      aside .zen-resources, .design-archives, .zen-resources  {
+        padding: 0 20px;
+      }
+      aside .zen-resources ul {
+        padding-left: 0;
+      }
+
+      aside nav ul {
+        padding-left: 0;
+      }
+
+    //UFO
+      .participation h3::before {
+        content: url("SVG/ufo.svg");
+        width: 20%;
+        height: auto;
+        position: relative;
+        top: 170px;
+        left: 628px;
+        animation: nudge 5s linear infinite alternate;
+        border-radius: 100%;
+      }
+      @keyframes nudge {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, 25px);
+      }
+      80% {
+        transform: translate(0, 50px);
+      }
+    }
+
+    // COMETS
+    .benefits::before {
+      content: url("SVG/comets.svg");
+      width: 16%;
+      margin: 0px -160px 0px 60px;
+      top: 181px;
+      margin-left: -160px;
+      animation:
+      nudge1 5s linear infinite alternate;
+      position: relative;
+    }
+
+    @keyframes nudge1 {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(0, 25px);
+      }
+
+      80% {
+        transform: translate(0, 50px);
+      }
+    }
+
+    @keyframes nudge2 {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(0, 35px);
+      }
+
+      80% {
+        transform: translate(0, 60px);
+      }
+    }
+
+      // CONSTILLATION
+      .requirements::before {
+        content: url("SVG/constellation.svg");
+        width: 20%;
+        height: auto;
+        position: relative;
+        top: 415px;
+        left: 628px;
+        width: 20%;
+      margin: 30px;
+        animation:
+          //nudge 5s linear infinite alternate,
+          rotation 5s infinite linear;
+      }
+      @keyframes nudge {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(0, 50px);
+      }
+
+      80% {
+        transform: translate(0, 100px);
+        }
+      }
+
+      @keyframes rotation {
+        50% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
