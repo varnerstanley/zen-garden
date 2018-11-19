@@ -103,6 +103,15 @@ footer a:hover {
         background-color: #000;
 
       }
+
+      .page-wrapper {
+        background-color: #19191a;
+        margin-top: 250px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 22% 15% 63%;
+      }
+
       .page-wrapper::before {
         content: url("SVG/satellite.svg");
         width: 15%;
@@ -131,14 +140,6 @@ footer a:hover {
         100% {
           transform: rotate(360deg);
         }
-      }
-
-      .page-wrapper {
-        background-color: #19191a;
-        margin-top: 250px;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 22% 15% 63%;
       }
 
       section {
