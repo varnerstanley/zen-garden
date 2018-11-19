@@ -216,9 +216,10 @@ footer a:hover {
         width: 20%;
         height: auto;
         position: relative;
-        top: 170px;
+        top: 238px;
         left: 628px;
-        animation: nudge 5s linear infinite alternate;
+        animation:
+        nudge 5s linear infinite alternate;
         border-radius: 100%;
       }
       @keyframes nudge {
