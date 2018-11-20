@@ -1,1 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.57 64.01"><defs><style>.cls-1{fill:#1e1e1e;stroke:#1e1e1e;}.cls-1,.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;stroke-width:4.45px;}.cls-2{fill:#35393a;}.cls-2,.cls-3,.cls-4{stroke:#35393a;}.cls-3{fill:#5e5e5e;}.cls-4{fill:#8dc3d8;}</style></defs><title>UFO</title><path class="cls-1" d="M46.74,76.68s27.3,17.22,50.78.7" transform="translate(-3.21 -32.34)"/><polyline class="cls-1" points="61.08 51.34 61.08 61.78 78.9 61.78 78.9 52.56"/><path class="cls-2" d="M6.72,68.72s68.69,21.86,130.56,0" transform="translate(-3.21 -32.34)"/><path class="cls-3" d="M46.74,51.22s-30.94-1.8-40,17.5H137.28S121.55,48.14,95.93,52" transform="translate(-3.21 -32.34)"/><path class="cls-4" d="M46.74,51.22s26,15.37,49.19.82C95.93,52,76,13.28,46.74,51.22Z" transform="translate(-3.21 -32.34)"/></svg>
+<svg id="Layer_1" class="ufo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.57 64.01">
+  <defs>
+    <style>.cls-1{fill:#1e1e1e;stroke:#1e1e1e;}.cls-1,.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;stroke-width:4.45px;}.cls-2{fill:#35393a;}.cls-2,.cls-3,.cls-4{stroke:#35393a;}.cls-3{fill:#5e5e5e;}.cls-4{fill:#8dc3d8;}</style>
+    </defs>
+  <title>UFO</title>
+  <path class="cls-1" d="M46.74,76.68s27.3,17.22,50.78.7" transform="translate(-3.21 -32.34)"/><polyline class="cls-1" points="61.08 51.34 61.08 61.78 78.9 61.78 78.9 52.56"/><path class="cls-2" d="M6.72,68.72s68.69,21.86,130.56,0" transform="translate(-3.21 -32.34)"/><path class="cls-3" d="M46.74,51.22s-30.94-1.8-40,17.5H137.28S121.55,48.14,95.93,52" transform="translate(-3.21 -32.34)"/><path class="cls-4" d="M46.74,51.22s26,15.37,49.19.82C95.93,52,76,13.28,46.74,51.22Z" transform="translate(-3.21 -32.34)"/>
+</svg>
