@@ -190,12 +190,20 @@ footer a:hover {
           }
         }
 
-        .explanation, .benefits, .requirements {
+        .explanation {
           margin-top: -100px;
+        }
+
+        .benefits {
+          margin-top: -129px;
         }
 
         .participation {
           margin-top: -40px;
+        }
+
+        .requirements {
+          margin-top: -197px;;
         }
       aside {
         grid-column: 1 / 6;
@@ -249,7 +257,7 @@ footer a:hover {
       content: url("SVG/comets.svg");
       width: 16%;
       margin: 0px -160px 0px 60px;
-      top: 181px;
+      top: 169px;
       margin-left: -160px;
       animation:
       nudge1 5s linear infinite alternate;
@@ -268,6 +276,18 @@ footer a:hover {
       80% {
         transform: translate(0, 50px);
       }
+    }
+
+    .benefits::after {
+      content: url("SVG/comet2.svg");
+      position: relative;
+      margin: 0px;
+      top: -113px;
+      margin-left: -110px;
+      width: 10%;
+
+        animation:
+        nudge2 3s linear infinite alternate;
     }
 
     @keyframes nudge2 {
